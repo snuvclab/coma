@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description"
+        content="Project page of the paper <Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models>"">
+  <meta property=" og:title"
+        content="Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models" />
+    <meta property="og:description"
+        content="We present a method to extract 3D affordances in general objects with self-supervised manner and represent it with out novel representation called primitive form of 3D affordances, which not only represent the physical interaction, but also captures implicit effects; orientation tendency, spatial relation." />
+    <meta property="og:url" content="https://snuvclab.github.io/coma/" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/images/teaser.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title"
+        content="Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/teaser.png">
+    <meta name="twitter:card" content="static/images/teaser.png">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Affordance, Human-Object Interaction, Diffusion Models">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models
+    </title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/js/video-comparison.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/video-comparison.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Beyond the Contact: Discovering Comprehensive
+                            Affordance for 3D Objects from Pre-trained 2D Diffusion Models</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://www.sshowbiz.xyz/" target="_blank">Hyeonwoo
+                                    Kim</a><sup>1*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://jellyheadandrew.github.io/" target="_blank">Sookwan
+                                    Han</a><sup>1*</sup>,</span>
+                            <span class="author-block">
+                                <a href="https://yj7082126.github.io/" target="_blank">Patrick
+                                    Kwon</a><sup>2</sup>,</span>
+                            </span>
+                            <span class="author-block">
+                                <a href="https://jhugestar.github.io/" target="_blank">Hanbyul Joo</a><sup>1</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Seoul National University,</span>
+                            <span class="author-block"><sup>2</sup>Naver Webtoon AI</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- TODO: PAPER PDF link (e.g., https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf) -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2401.12978.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- TODO: Supplementary PDF link (e.g., static/pdfs/supplementary_material.pdf) -->
+                                <!-- <span class="link-block">
+                  <a href="https://sshowbiz.github.io/ZSP3A/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/SShowbiz/ZSP3A" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!--TODO: ArXiv abstract Link (e.g., https://arxiv.org/abs/<ARXIV PAPER ID>)-->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2401.12978" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Teaser video-->
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-image">
+                <img src="static/images/teaser.png" alt="Random Image" id="tree" width="100%">
+            </div>
+        </div>
+        </br>
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="subtitle has-text-centered">
+                    <!-- We propose a novel affordance representation called ComA which models both contact and non-contact
+                    patterns as a distribution of relative orientation and proximity. -->
+
+                    Given a 3D object mesh, we generates numerous 3D Human-Object Interaction samples, and
+                    learn a novel affordance representation called ComA which models both contact and non-contact
+                    patterns.
+                    <!-- We present a method to extract 3D affordance in general objects with zero-shot manner using our
+                    novel
+                    representation called <b>primitives of 3D affordances</b>, which not only represent
+                    physical
+                    interactions, but also captures implicit effects; orientational tendency, spatial relation. -->
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Understanding the inherent human knowledge in interacting with a given environment is
+                            essential for improving AI to better assist humans.
+                            While existing approaches primarily focus on human-object contacts during interactions, such
+                            affordance representation cannot fully address other important aspects of human-object
+                            interactions (HOIs), <i>i.e.</i> patterns of relative positions and orientations.
+                            In this paper, we introduce a novel affordance representation, named <i>Comprehensive
+                                Affordance</i> (ComA). Given a 3D object mesh, ComA models the distribution of
+                            orientation and
+                            proximity of vertices in interacting human meshes, capturing plausible patterns of
+                            contact
+                            region, relative orientations, and spatial relationships during interactions.
+                            To construct the distribution, we present a novel pipeline that synthesizes diverse and
+                            realistic 3D HOI samples given any 3D target object mesh. The pipeline leverages a
+                            pre-trained 2D inpainting diffusion model to generate HOI images from object renderings
+                            and
+                            lifts them into 3D. To avoid the generation of false affordances, we propose a new
+                            inpainting framework, <i>Adaptive Mask Inpainting</i>. Since ComA is built on synthetic
+                            samples, it can extended to any object in an unbounded manner, as we demonstrate on 100
+                            diverse object categories.
+                            Through extensive experiments, we show that ComA outperforms competitors that relies on
+                            human annotations in modeling contact-based affordance. Importantly, we further showcase
+                            the
+                            potential usage of ComA to reconstruct human-object interactions in 3D through an
+                            optimization framework, demonstrating its advantage of incorporating both contact and
+                            non-contact affordance properties.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- Image carousel -->
+    <!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item"> -->
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            First image description.
+          </h2>
+        </div>
+        <div class="item"> -->
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
+        </div>
+        <div class="item"> -->
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Third image description.
+          </h2>
+        </div>
+        <div class="item"> -->
+    <!-- Your image here -->
+    <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Fourth image description.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+    <!-- End image carousel -->
+
+    <!-- Method -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+
+                <h2 class="title is-3 has-text-centered">Method</h2>
+                <img src="static/images/method.png" alt="Random Image" id="tree" height="100%">
+                </br>
+                </br>
+                <h2 class="subtitle has-text-centered">
+                    Our method consists of two parts; <b>(1) Generating 3D HOI samples</b>, represented in upper box,
+                    <b>(2) Learning Comprehensive Affordance from Generated 3D
+                        HOI Samples</b>,
+                    represented in lower box. We introduce Adaptive Mask Inpainting
+                    and Depth Optimization via
+                    Weak Auxiliary Cue for generating diverse and precise 3D HOI samples. From the generated
+                    samples, we
+                    learn the pointwise distribution of relative orientation and proximity, which can be derived into
+                    various
+                    forms of 3D affordance including contact, orientational tendency, and spatial relation.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Youtube video -->
+    <!-- <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3 has-text-centered">Video Presentation</h2>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <div class="publication-video">
+                            <iframe src="https://www.youtube.com/embed/TmsemRskUe0" frameborder="0"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End youtube video -->
+
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Video</h2>
+                        <div class="publication-video">
+                            <video poster="" id="tree" controls loop height="100%">
+                                <source src="static/videos/video.mp4" type="video/mp4" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3 has-text-centered">Results</h2>
+                <h4 align="left" class="title is-4">Generated 3D Affordance Samples</h4>
+                <br />
+
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <video poster="" id="suitcase" autoplay controls muted loop playsinline>
+                            <source src="./static/videos/samples/suitcase.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="skateboard" autoplay controls muted loop playsinline>
+                            <source src="./static/videos/samples/skateboard.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="keyboard" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/keyboard.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="chair" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/chair.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="tennis racket" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/tennis_racket.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="shovel" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/shovel.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <br />
+                <h4 align="left" class="title is-4">Contactual Affordance</h4>
+                <br />
+                <div class="row">
+                    <!-- MOTORCYCLE -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="motorcycle_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/motorcycle_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="motorcycle_humanMerge"></canvas>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="motorcycle_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/motorcycle_object.mp4"
+                                onplay="resizeAndPlay(this)"></video>
+                            <canvas height=0 class="videoMerge" id="motorcycle_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- KEYBOARD -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="keyboard_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/keyboard_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="keyboard_humanMerge"></canvas>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="keyboard_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/keyboard_object.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="keyboard_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- SKATEBOARD -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="skateboard_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/skateboard_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="skateboard_humanMerge"></canvas>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="skateboard_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/skateboard_object.mp4"
+                                onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="skateboard_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="has-text-centered">Motorcycle</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Keyboard</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Skateboard</p>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <!-- SOCCER BALL -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="soccer_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/soccer_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="soccer_humanMerge"></canvas>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="soccer_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/soccer_object.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas height=0 class="videoMerge" id="soccer_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- SUITCASE -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="suitcase_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/suitcase_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="suitcase_humanMerge"></canvas>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="suitcase_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/suitcase_object.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="suitcase_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- TENNIS -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="tennis_human" loop playsinline autoplay muted
+                                src="./static/videos/contact/tennis_human.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="tennis_humanMerge"></canvas>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="tennis_object" loop playsinline autoplay muted
+                                src="./static/videos/contact/tennis_object.mp4" onplay="resizeAndPlay(this)"></video>
+                            <canvas class="videoMerge" id="tennis_objectMerge"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="has-text-centered">Soccer Ball</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Suitcase</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Tennis Racket</p>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <h4 align="left" class="title is-4">Orientational Affordance</h4>
+                <br />
+
+                <div class="row">
+                    <!-- MOTORCYCLE -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="stool_hoi" loop playsinline autoplay muted
+                                src="./static/videos/orientation/stool_hoi.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="stool_human2" loop playsinline autoplay muted
+                                src="./static/videos/orientation/stool_human.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="chair_hoi" loop playsinline autoplay muted
+                                src="./static/videos/orientation/chair_hoi.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="chair_human2" loop playsinline autoplay muted
+                                src="./static/videos/orientation/chair_human.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="has-text-centered">Stool</p>
+                    </div>
+
+                    <div class="col">
+                        <p class="has-text-centered">Chair</p>
+                    </div>
+                </div>
+
+
+                <br />
+                <br />
+                <h4 align="left" class="title is-4">Spatial Affordance</h4>
+
+                <div class="row">
+                    <!-- MOTORCYCLE -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="umbrella_object" loop playsinline autoplay muted
+                                src="./static/videos/spatial/umbrella_object.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="umbrella_full" loop playsinline autoplay muted
+                                src="./static/videos/spatial/umbrella_full.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                    <!-- <div class="col"></div> -->
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="umbrella_hand" loop playsinline autoplay muted
+                                src="./static/videos/spatial/umbrella_hand.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="video-compare-container" style="width: 100%">
+                            <video class="video" width=100% id="umbrella_face" loop playsinline autoplay muted
+                                src="./static/videos/spatial/umbrella_face.mp4" onplay="resizeAndPlay(this)"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="has-text-centered">Input</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Full Body</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Hand</p>
+                    </div>
+                    <div class="col">
+                        <p class="has-text-centered">Face</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End video carousel -->
+
+
+
+
+
+
+
+    <!-- Paper poster -->
+    <!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+      </iframe>
+
+    </div>
+  </div>
+</section> -->
+    <!--End paper poster -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            Coming Soon!
+            <!-- <pre><code>@misc{kim2024zeroshot,
+        title={Zero-Shot Learning for the Primitives of 3D Affordance in General Objects}, 
+        author={Hyeonwoo Kim and Sookwan Han and Patrick Kwon and Hanbyul Joo},
+        year={2024},
+        eprint={2401.12978},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }</code></pre> -->
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the of this website, we just ask that you link back to this page in
+                            the footer.
+                            <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
