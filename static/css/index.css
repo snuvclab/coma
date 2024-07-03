@@ -43,6 +43,10 @@ body {
   object-fit: fit;
 }
 
+.hero-body {
+  padding-bottom: 20px;
+}
+
 .publication-header .hero-body {}
 
 .publication-title {
