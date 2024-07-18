@@ -29,3 +29,7 @@ data
 ```
 
 In `SketchFab/categories.json`, you can check the existing object categories, along with the original data URL and the license information.
+
+## Regarding Paper and Code Release
+- The paper (Arxiv) will be updated and available soon.
+- The code will likely be released by the beginning of August.
