@@ -1,12 +1,13 @@
 # <p align="center"> Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models (ECCV 2024)</p>
 
-## [Project Page](https://snuvclab.github.io/coma/) &nbsp;|&nbsp; [Paper](https://snuvclab.github.io/coma/) 
+## [Project Page](https://snuvclab.github.io/coma/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2401.12978) 
 
 ![demo.gif](./assets/teaser.png)
 
 This is the official code for the ECCV 2024 paper "Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models".
 
 ## News
+- [2024/07/24] Arxiv paper release.
 - [2024/07/17] Initial dataset release.
 
 ## Download the Dataset
