@@ -2,7 +2,7 @@
 
 ## [Project Page](https://snuvclab.github.io/coma/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2401.12978) 
 
-![demo.gif](./assets/teaser.png)
+![demo.png](./assets/teaser.png)
 
 This is the official code for the ECCV 2024 paper "Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models".
 
@@ -11,6 +11,8 @@ This is the official code for the ECCV 2024 paper "Beyond the Contact: Discoveri
 - [2024/07/17] Initial dataset release.
 
 ## Download the Dataset
+
+![demo.png](./assets/dataset.png)
 
 Since our pipeline for learning ComA is scalable with respect to the category of input objects, we collected a total of 83 object meshes from [SketchFab](https://sketchfab.com/), encompassing various interaction types. Each object mesh was converted to the `.obj` format, including image texture files. We manually canonicalize the location, orientation, and scale of the objects. The dataset can be downloaded at [Google Drive](https://drive.google.com/file/d/1wXvm4JEqE1IhwmeDECr8qYOH8hzOfIjx/view?usp=sharing).
 
