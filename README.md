@@ -1,4 +1,4 @@
-# <p align="center"> Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models (ECCV 2024)</p>
+# <p align="center"> Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models (ECCV 2024, Oral)</p>
 
 ## [Project Page](https://snuvclab.github.io/coma/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2401.12978) 
 
@@ -34,4 +34,5 @@ data
 In `SketchFab/categories.json`, you can check the existing object categories, along with the original data URL and the license information.
 
 ## Regarding Code Release
-- The code will likely be released by the beginning of August.
+- ~~The code will likely be released by the beginning of August.~~
+- We are finalizing the code release!
