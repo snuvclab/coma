@@ -164,11 +164,11 @@
     </section>
     <!-- End teaser video -->
 
-    <!-- Paper abstract -->
-    <section class="section hero is-light">
+    <section class="hero is-light">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
+                    <br>
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
@@ -193,11 +193,218 @@
                             framework, highlighting its advantage in incorporating both contact and non-contact
                             properties
                         </p>
+                        <br>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+                
+    <!-- Paper abstract -->
+    <section class="section hero">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <button class="button is-link is-light" onclick="toggleAbstract()">
+                        Show/Hide Abstract
+                    </button>
+                    <div id="abstractContent" class="content has-text-justified" style="display: none;">
+                        <p>
+                            Understanding the inherent human knowledge in interacting with a given environment
+                            (<i>e.g.</i>, affordance) is essential for improving AI to better assist humans.
+                            While existing approaches primarily focus on human-object contacts during interactions, such
+                            affordance representation cannot fully address other important aspects of human-object
+                            interactions (HOIs), <i>i.e.</i> patterns of relative positions and orientations.
+                            In this paper, we introduce a novel affordance representation, named <i>Comprehensive
+                                Affordance</i> (ComA). Given a 3D object mesh, ComA models the distribution of relative
+                            orientation and proximity of vertices in interacting human meshes, capturing plausible
+                            patterns of contact, relative orientations, and spatial relationships.
+                            To construct the distribution, we present a novel pipeline that synthesizes diverse and
+                            realistic 3D HOI samples given any 3D target object mesh. The pipeline leverages a
+                            pre-trained 2D inpainting diffusion model to generate HOI images from object renderings and
+                            lifts them into 3D. To avoid the generation of false affordances, we propose a new
+                            inpainting framework, <i>Adaptive Mask Inpainting</i>. Since ComA is built on synthetic
+                            samples, it can extend to any object in an unbounded manner.
+                            Through extensive experiments, we demonstrate that ComA outperforms competitors that rely on
+                            human annotations in modeling contact-based affordance. Importantly, we also showcase the
+                            potential of ComA to reconstruct human-object interactions in 3D through an optimization
+                            framework, highlighting its advantage in incorporating both contact and non-contact
+                            properties
+                        </p>
+                    </div>
+                    <script>
+                        function toggleAbstract() {
+                            var content = document.getElementById("abstractContent");
+                            if (content.style.display === "none") {
+                                content.style.display = "block";
+                            } else {
+                                content.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div> -->
+            </div>
+            <div class="container is-max-desktop">  
+                <h2 class="title is-3 has-text-centered">Key Takeaways</h2>
+                <br>
+                <img src="static/images/problem.png" alt="Problem Description" width="100%">
+                <br>
+                <br>
+                <h2 class="subtitle has-text-centered">
+                    Humans interact with objects not only by contact: they can view the screen of a laptop (left), 
+                    or gaze through a telescope (right). <b>Such interactions posess 
+                    inherent orientational and spatial patterns, which are important but often overlooked aspects of affordance.</b>
+                </h2>
+                <hr>
+                <img src="static/images/keytakeaways.png" alt="Problem Description" width="100%">
+                <br>
+                <br>
+                <h2 class="subtitle has-text-centered">
+                    Our proposed <b>COMprehensive Affordance (ComA)</b> captures both high-resolution contact information 
+                    and non-contact interactions, providing a more complete representation of object affordances.
+                </h2>
+                <hr>
+                <video class="video" style="width: auto; max-width: 100%; max-height: 450px;" id="stool_hoi" loop playsinline autoplay muted
+                src="./static/videos/application.mp4" onplay="resizeAndPlay(this)"></video>
+                <br>
+                <br>
+                <h2 class="subtitle has-text-centered">
+                    <b>ComA allows us to unlock various downstream applications</b>, like the example of creating human-object interactions shown above.
+                </h2>
+                <hr>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <video poster="" id="suitcase" autoplay controls muted loop playsinline>
+                            <source src="./static/videos/samples/suitcase.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="skateboard" autoplay controls muted loop playsinline>
+                            <source src="./static/videos/samples/skateboard.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="keyboard" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/keyboard.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="chair" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/chair.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="tennis racket" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/tennis_racket.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video poster="" id="shovel" autoplay controls muted loop playsinline>\
+                            <source src="./static/videos/samples/shovel.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    Leveraging pre-trained diffusion models, we can <b>generate 3D humans interacting with any given object without additional training</b>. This method <b>enables ComA learning for any 3D object</b>.
+                </h2>
+                <div class="has-text-centered">
+                    <button class="button is-primary is-rounded" id="toggleMethodOverview">
+                        <span class="icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </span>
+                        <span>Show Method Overview</span>
+                    </button>
+                </div>
+                <div id="methodOverview" style="display: none;">
+                    <div class="hero-body">
+                        <div class="container is-max-desktop">                
+                            <h2 class="title is-3 has-text-centered">Overview</h2>
+                            <img src="static/images/method.png" alt="Random Image" id="tree" height="100%">
+                            </br>
+                            </br>
+                            <h2 class="subtitle has-text-centered">
+                                Our method consists of two parts; <b>(1) Generating 3D HOI samples</b>, represented in upper box,
+                                <b>(2) Learning Comprehensive Affordance from Generated 3D
+                                    HOI Samples</b>,
+                                represented in lower box. We introduce Adaptive Mask Inpainting
+                                and Depth Optimization via
+                                Weak Auxiliary Cue for generating diverse and precise 3D HOI samples. From the generated
+                                samples, we
+                                learn the pointwise distribution of relative orientation and proximity, which can be derived into
+                                various
+                                forms of 3D affordance including contact, orientational tendency, and spatial relation.
+                            </h2>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-body">
+                        <div class="container is-max-desktop">
+                            <h2 class="title is-3 has-text-centered">Adaptive Mask Inpainting</h2>
+                            <img src="static/images/example_result_adaptive_mask_inpainting.png" alt="Random Image" id="tree" height="100%">
+                            </br>
+                            </br>
+                            <h2 class="subtitle has-text-centered">
+                                During inserting humans into image via inpainting, the object geometry and details within the mask
+                                region are not preserved, resulting in false affordances. Our Adaptive Mask Inpainting alleviates this by progressively specifying
+                                the inpainting region over diffusion timesteps.
+                            </h2>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="static/images/adaptive_mask_algorithm.png" alt="Random Image" id="tree" style="height: 100%;">
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <video class="video" style="width: auto; max-width: 100%; max-height: 450px;" id="stool_hoi" loop playsinline autoplay muted
+                                        src="./static/videos/adaptive_mask_inpainting_vis.mp4" onplay="resizeAndPlay(this)"></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <script>
+                    document.getElementById('toggleMethodOverview').addEventListener('click', function() {
+                        var methodOverview = document.getElementById('methodOverview');
+                        var button = this;
+                        if (methodOverview.style.display === 'none') {
+                            methodOverview.style.display = 'block';
+                            button.innerHTML = '<span class="icon"><i class="fas fa-times"></i></span><span>Hide Method Overview</span>';
+                            button.classList.remove('is-primary');
+                            button.classList.add('is-danger');
+                        } else {
+                            methodOverview.style.display = 'none';
+                            button.innerHTML = '<span class="icon"><i class="fas fa-lightbulb"></i></span><span>Show Method Overview</span>';
+                            button.classList.remove('is-danger');
+                            button.classList.add('is-primary');
+                        }
+                    });
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Video</h2>
+                        <div class="publication-video">
+                            <video poster="" id="tree" controls loop height="100%">
+                                <source src="static/videos/video.mp4" type="video/mp4" frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>                
     <!-- End paper abstract -->
 
 
@@ -240,12 +447,13 @@
 </section> -->
     <!-- End image carousel -->
 
+    
     <!-- Method -->
-    <section class="hero is-small">
+     
+    <!-- <section class="hero is-small">
         <div class="hero-body">
-            <div class="container is-max-desktop">
-
-                <h2 class="title is-3 has-text-centered">Method</h2>
+            <div class="container is-max-desktop">                
+                <h2 class="title is-3 has-text-centered">Method Overview</h2>
                 <img src="static/images/method.png" alt="Random Image" id="tree" height="100%">
                 </br>
                 </br>
@@ -263,13 +471,12 @@
                 </h2>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Adaptive Mask Inpainting -->
-    <section class="hero is-small">
+    <!-- <section class="hero is-small">
         <div class="hero-body">
             <div class="container is-max-desktop">
-
                 <h2 class="title is-3 has-text-centered">Adaptive Mask Inpainting</h2>
                 <img src="static/images/example_result_adaptive_mask_inpainting.png" alt="Random Image" id="tree" height="100%">
                 </br>
@@ -280,20 +487,6 @@
                     the inpainting region over diffusion timesteps.
                 </h2>
                 
-                <!-- <div class="row">
-                <div class="col-md-6">
-                    <img src="static/images/adaptive_mask_algorithm.png" alt="Random Image" id="tree" height="100%">
-    
-                </div>
-                <div class="col-md-6">
-                    <div style="overflow: hidden; height: 450px;">
-                        <video class="video" style="object-fit: cover; width: 100%; height: 100%;" id="stool_hoi" loop playsinline autoplay muted
-                            src="./static/videos/adaptive_mask_inpainting_vis.mp4" onplay="resizeAndPlay(this)"></video>
-                    </div>
-    
-                </div>
-
-                </div> -->
                 <div class="row">
                     <div class="col-md-6">
                         <img src="static/images/adaptive_mask_algorithm.png" alt="Random Image" id="tree" style="height: 100%;">
@@ -303,14 +496,9 @@
                             src="./static/videos/adaptive_mask_inpainting_vis.mp4" onplay="resizeAndPlay(this)"></video>
                     </div>
                 </div>
-
-
-                </div>
-
-
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -332,23 +520,6 @@
     </section> -->
     <!-- End youtube video -->
 
-    <section class="hero is-small is-light">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <h2 class="title is-3">Video</h2>
-                        <div class="publication-video">
-                            <video poster="" id="tree" controls loop height="100%">
-                                <source src="static/videos/video.mp4" type="video/mp4" frameborder="0"
-                                    allow="autoplay; encrypted-media" allowfullscreen>
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     
@@ -357,7 +528,7 @@
         <div class="hero-body">
             <div class="container">
                 <h2 class="title is-3 has-text-centered">Results</h2>
-                <h4 align="left" class="title is-4">Generated 3D Affordance Samples</h4>
+                <!-- <h4 align="left" class="title is-4">Generated 3D Affordance Samples</h4>
                 <br />
 
                 <div id="results-carousel" class="carousel results-carousel">
@@ -391,7 +562,7 @@
                             <source src="./static/videos/samples/shovel.mp4" type="video/mp4">
                         </video>
                     </div>
-                </div>
+                </div> -->
 
                 <br />
                 <h4 align="left" class="title is-4">Contact-based Affordance</h4>
