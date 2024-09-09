@@ -1,5 +1,5 @@
 QUANT_AFFORDANCE_EXTRACTION_HYPERPARAMS_DICT = {
-    "quant:full_sigconf_0.0": dict(  # --> for visualizing contact on human
+    "quant:full": dict(  # --> for visualizing contact on human
         human_res="750",  # 'FULL', '2000', '1000'
         human_use_downsample_pcd_raw=False,
         object_res="2048",  # '1500', '180', '1000'
