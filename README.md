@@ -7,6 +7,8 @@
 This is the official code for the ECCV 2024 paper "Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models".
 
 ## News
+- [2025/03/19] Our [collected dataset](https://huggingface.co/datasets/SShowbiz/ComAsset) has been uploaded to Hugging Face!
+- [2024/11/12] The project page has been updated!
 - [2024/08/19] Initial code release.
 - [2024/07/24] Arxiv paper release.
 - [2024/07/17] Initial dataset release.
@@ -15,7 +17,7 @@ This is the official code for the ECCV 2024 paper "Beyond the Contact: Discoveri
 
 ![demo.png](./assets/dataset.png)
 
-Since our pipeline for learning ComA is scalable with respect to the category of input objects, we collected a total of 83 object meshes from [SketchFab](https://sketchfab.com/), encompassing various interaction types. Each object mesh was converted to the `.obj` format, including image texture files. We manually canonicalize the location, orientation, and scale of the objects. The dataset can be downloaded at [Google Drive](https://drive.google.com/file/d/1wXvm4JEqE1IhwmeDECr8qYOH8hzOfIjx/view?usp=sharing).
+Since our pipeline for learning ComA is scalable with respect to the category of input objects, we collected a total of 83 object meshes from [SketchFab](https://sketchfab.com/), encompassing various interaction types. Each object mesh was converted to the `.obj` format, including image texture files. We manually canonicalize the location, orientation, and scale of the objects. The dataset can be downloaded at [Hugging Face](https://huggingface.co/datasets/SShowbiz/ComAsset).
 
 The format of the dataset is as follows:
 
@@ -160,14 +162,11 @@ python src/application/optimize.py  --coma_path "pre-trained/BEHAVE/backpack/hum
 ## Citation
 If you find our work helpful or use our code, please consider citing:
 ```bibtex
-@misc{coma,
-      title={Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models}, 
-      author={Hyeonwoo Kim and Sookwan Han and Patrick Kwon and Hanbyul Joo},
-      year={2024},
-      eprint={2401.12978},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2401.12978}, 
+@inproceedings{ComA,
+  title="Beyond the Contact: Discovering Comprehensive Affordance for 3D Objects from Pre-trained 2D Diffusion Models",
+  author="Kim, Hyeonwoo and Han, Sookwan and Kwon, Patrick and Joo, Hanbyul",
+  booktitle=ECCV,
+  year={2024}
 }
 ```
 
